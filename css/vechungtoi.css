@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-image: url(/img/bg_gif.gif);
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  height: 12vh;
+  margin: 0 auto;
+  background-color: #07033f;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.luachon li {
+  list-style: none;
+  font-weight: bold;
+}
+.luachon a,
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.luachon a:hover {
+  color: orange;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 9;
+}
+nav .navbar .luachon li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav .navbar .luachon li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: orange;
+  display: block;
+  transition: 0.2s linear;
+}
+
+nav .navbar .luachon li a:hover::after {
+  width: 100%;
+}
+
+nav .navbar .luachon li a:hover {
+  color: orange;
+}
+
+.navbar .luachon {
+  display: flex;
+  gap: 8rem;
+}
+
+.nut {
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+  border: 2px solid orange;
+}
+.nut:hover {
+  scale: 1.05;
+  background-color: orange;
+  color: white;
+  border: 4px solid rgb(255, 255, 255);
+  transition: 0.2s linear;
+}
+
+.nut:active {
+  scale: 0.95;
+}
+
+.loichao {
+  height: 5vh;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.thongtin {
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+  display: flex;
+}
+
+.thongtin div {
+  width: 50%;
+  align-items: center;
+}
+.thongtin img {
+  width: 30%;
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  height: 40%;
+  width: 40%;
+}
+
+.thongtin p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+}
+footer {
+  background-color: #07033f;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 30vh;
+  align-items: center;
+}
+footer div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 180px;
+  display: block;
+}
+
+footer div {
+  margin-top: 20px;
+}
+
+footer div p {
+  margin-top: 20px;
+}
+
+.phan1footer {
+  width: 30%;
+}
+footer h2 {
+  color: #0044ff;
+}
+.phan1footer p {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  animation-name: doichovui;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+@keyframes doichovui {
+  0% {
+    color: #ff0000;
+  }
+  10% {
+    color: #ff8c00;
+  }
+  20% {
+    color: #c3ff00;
+  }
+  30% {
+    color: #00fd0d;
+  }
+  40% {
+    color: #00ffa2;
+  }
+  50% {
+    color: #00fff2;
+  }
+  60% {
+    color: #004cff;
+  }
+  70% {
+    color: #2600ff;
+  }
+  80% {
+    color: #c300ff;
+  }
+  90% {
+    color: #ff02af;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+.iconfooter i {
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
+.banquyen {
+  background-color: #07033f;
+  width: 100%;
+  height: 5vh;
+  text-align: right;
+}
+::-webkit-scrollbar {
+  display: none;
+}
